@@ -1,0 +1,43 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+</div>
+
+<div class="hero-image">
+</div>
+
+<div class="container-form">
+    <form id="contact-form">
+       
+        <input type="text" id="fname" name="fname" class="detailsInput" placeholder="First Name" required><br>
+
+        <input type="text" id="lname" name="lname" class="detailsInput" placeholder="Last Name" required><br>
+
+        <input type="text" id="email" name="email" class="detailsInput" placeholder="Email" required><br>
+
+        <input type="text" id="phone" name="phone" placeholder="Phone Number" class="detailsInput" required><br>
+
+        <p class="radio-options">Dietery Requirements:</p>
+        
+        <input type="radio" id="vegan" name="options" value="vegan" class="radio-options">
+        <label for="vegan">Vegan</label><br>
+
+        <input type="radio" id="vegetarian" name="options" value="vegetarian" class="radio-options">
+        <label for="vegetarian">Vegetarian</label><br>
+
+        <input type="radio" id="glutenfree" name="options" value="glutenfree" class="radio-options">
+        <label for="glutenfree">Gluten Free</label><br>
+
+        <input type="radio" id="none" name="options" value="none" class="radio-options">
+        <label for="none">None</label><br>
+
+        <textarea id="message" name="message" rows="5" cols="50" placeholder="Message" required></textarea><br>
+
+		<input type="submit" value="Submit" id="submit-button">
+    </form>
+</div>
